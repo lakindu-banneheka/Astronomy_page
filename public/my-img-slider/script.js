@@ -1,15 +1,24 @@
 var SlideIndex = 1;
 // var mouseHolder = document.addEventListener();
 // var Timer;
-
 showDivs(SlideIndex);
+setInterval(SlideTimer = (n) => {
+    
+    n = SlideIndex;
+    showDivs(n);
+    console.log(n-1);
+    SlideIndex++;
+
+  }, 6000);
+
+
 
 function plusDives(n){
-    showDivs(SlideIndex += n);
+    SlideTimer(SlideIndex += n);
 }
 
 function curruntDiv(n){
-    showDivs(SlideIndex=n);
+    SlideTimer(SlideIndex=n);
 }
 
 
@@ -26,16 +35,8 @@ for (i = 0; i < Slides.length; i++) {
     dots[i].className = dots[i].className.replace(" badgeSelect", "");
   }
   
-
-  Slides[SlideIndex-1].style.display = "block";  
+   Slides[SlideIndex-1].style.display = "block";  
    dots[SlideIndex-1].className += " badgeSelect";
     
 }
-setInterval(SlideTimer = (n) => {
-    SlideIndex++;
-    // n = SlideIndex-1;
-    showDivs(SlideIndex-1);
-    console.log(SlideIndex-1);
 
-
-  }, 4000);
