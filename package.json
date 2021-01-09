@@ -1,0 +1,24 @@
+{
+  "name": "Astronomy page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lakindu-banneheka/Astronomy_page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lakindu-banneheka/Astronomy_page/issues"
+  },
+  "homepage": "https://github.com/lakindu-banneheka/Astronomy_page#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta1"
+  }
+}

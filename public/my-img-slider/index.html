@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Image slider</title>
+</head>
+<body>
+
+    <!-- Hero img slider -->
+    <div class="SlideContainer" style="padding:0">
+        
+        <img src="./components/img/BG (18).jpg" alt="" class="Slider" />
+        <img src="./components/img/BG (21).jpg" alt="" class="Slider" />
+        <img src="./components/img/BG (53).jpg" alt="" class="Slider" />
+        <img src="./components/img/BG (8).jpg" alt="" class="Slider" />
+        <div class="Arrows">
+            <div class="Arrow" style="float: left!important;" onclick="plusDives(-1)">&#10094;</div>
+            <div class="Arrow" style="float: right!important;" onclick="plusDives(+1)">&#10095;</div>
+        </div>
+        <div class="dots">
+            <span class="badge dot" onclick="curruntDiv(1)"></span>
+            <span class="badge dot" onclick="curruntDiv(2)"></span>
+            <span class="badge dot" onclick="curruntDiv(3)"></span>
+            <span class="badge dot" onclick="curruntDiv(4)"></span>
+
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="./script.js"></script>
+</body>
+</html>
