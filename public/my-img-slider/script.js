@@ -9,9 +9,7 @@ setInterval(SlideTimer = (n) => {
     console.log(n-1);
     SlideIndex++;
 
-  }, 6000);
-
-
+  }, 4000);
 
 function plusDives(n){
     SlideTimer(SlideIndex += n);
