@@ -1,17 +1,24 @@
+/* index */
 *{
     margin: 0;
 
 }
+/* Slide Container */
 .SlideContainer{
     margin-left:auto;
     margin-right:auto;
     position:relative;
-    width: 900px;
+    width: 100%;
+    /* max-height: 713px; */
 }
+/* Slides */
 .Slider{
     width: 100%;
     display: none;
+    max-height: 100vh;
+
 }
+/* dots */
 .dots{
     display:inline-block;
     text-align: center!important;
@@ -35,7 +42,7 @@
     background-color: transparent;
     z-index: 2px;
 }
-
+/* dot hover */
 .badge:hover{
     color:#000;
     background-color:#fff
@@ -44,31 +51,33 @@
     color:#000;
     background-color:#fff
 }
+
+/* next & preveous */
 .Arrows{
     display:inline-block;
     text-align: center!important;
     margin-left:auto;
     margin-right:auto;
     position:relative;
-    margin-top:16px!important;
-    margin-bottom:16px!important;
+    /* margin-top:16px!important;
+    margin-bottom:16px!important; */
     font-size: 24px;
     color: #ffffff;
     box-sizing: inherit;
     position:absolute;
     left:50%;
     bottom:0;
-    top: 50%;
+    top: 40%;
     transform:translate(-50%,0%);
     -ms-transform:translate(-50%,0%);   
     width: 93%;
     z-index: 3px;
-
 }
 .Arrow{
-    
+    cursor: pointer;
     border-radius: 50%;
     background-color: black;
     padding:5px 15px;
+    display:initial;
 }
 .Arrow:hover{color:#b4aa50!important}

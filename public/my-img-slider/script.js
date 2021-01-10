@@ -1,18 +1,21 @@
 var SlideIndex = 1;
 // var mouseHolder = document.addEventListener();
-// var Timer;
+var Timer;
+var Time = 3000;
 
-showDivs(SlideIndex);
-
+// next & previous
 function plusDives(n){
-    showDivs(SlideIndex += n);
+  clearInterval(Timer);
+  Timer = setInterval(SlideTimer = (n) => {n = SlideIndex;showDivs(n);SlideIndex++;}, Time);
+  SlideTimer(SlideIndex += n-1);
 }
-
+// dot control
 function curruntDiv(n){
-    showDivs(SlideIndex=n);
+  clearInterval(Timer);
+  Timer = setInterval(SlideTimer = (n) => {n = SlideIndex;showDivs(n);SlideIndex++;}, Time);
+  SlideTimer(SlideIndex=n);
 }
-
-
+// show -- main part
 function showDivs(n){
 var i;
 var Slides = document.getElementsByClassName('Slider');
@@ -25,17 +28,10 @@ for (i = 0; i < Slides.length; i++) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" badgeSelect", "");
   }
-  
-
-  Slides[SlideIndex-1].style.display = "block";  
+   Slides[SlideIndex-1].style.display = "block";  
    dots[SlideIndex-1].className += " badgeSelect";
-    
+   console.log(SlideIndex-1);
 }
-setInterval(SlideTimer = (n) => {
-    SlideIndex++;
-    // n = SlideIndex-1;
-    showDivs(SlideIndex-1);
-    console.log(SlideIndex-1);
-
-
-  }, 4000);
+// start
+Timer = setInterval(SlideTimer = (n) => {n = SlideIndex;showDivs(n);SlideIndex++;}, Time);
+SlideTimer(SlideIndex); 

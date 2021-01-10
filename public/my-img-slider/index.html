@@ -2,27 +2,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style -->
     <link rel="stylesheet" href="./index.css">
     <title>Image slider</title>
 </head>
 <body>
 
     <!-- Hero img slider -->
-    <div class="SlideContainer" style="padding:0">
-        
-        <img src="./components/img/BG (18).jpg" alt="" class="Slider" />
-        <img src="./components/img/BG (21).jpg" alt="" class="Slider" />
-        <img src="./components/img/BG (53).jpg" alt="" class="Slider" />
-        <img src="./components/img/BG (8).jpg" alt="" class="Slider" />
+    <div class="SlideContainer" style="padding:0; ">
+        <!-- Image links -->
+        <img src="./components/img/1.png" alt="" class="Slider" />
+        <img src="./components/img/2.jpg" alt="" class="Slider" />
+        <img src="./components/img/3.jpg" alt="" class="Slider" />
+        <img src="./components/img/4.jpg" alt="" class="Slider" />
+        <img src="./components/img/5.jpg" alt="" class="Slider" />
         <div class="Arrows">
             <div class="Arrow" style="float: left!important;" onclick="plusDives(-1)">&#10094;</div>
-            <div class="Arrow" style="float: right!important;" onclick="plusDives(+1)">&#10095;</div>
+            <div class="Arrow" style="float: right!important;" onclick="plusDives(1)">&#10095;</div>
         </div>
+        <!-- If adding more imges , also you shiuld add sapn  -->
         <div class="dots">
             <span class="badge dot" onclick="curruntDiv(1)"></span>
             <span class="badge dot" onclick="curruntDiv(2)"></span>
             <span class="badge dot" onclick="curruntDiv(3)"></span>
             <span class="badge dot" onclick="curruntDiv(4)"></span>
+            <span class="badge dot" onclick="curruntDiv(5)"></span>
 
         </div>
     </div>
